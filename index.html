@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HaloYPT</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="" style="z-index: 1">
+      <!-- <div class="position-absolute" style="right: 0; top: 0">
+        <img
+          alt="ypt logo"
+          src="./img/bg-top.png"
+          class="img-fluid"
+          style="object-fit: cover; object-position: top"
+        />
+      </div> -->
+      <div class="container position-relative" style="z-index: 3">
+        <nav class="navbar pt-5 mb-3">
+          <div class="container d-flex justify-content-center">
+            <img src="./img/logo.png" alt="logo" width="350" />
+          </div>
+        </nav>
+
+        <div
+          class="d-flex flex-column gap-4 justify-content-center align-items-center"
+        >
+          <div class="d-flex justify-content-center">
+            <div class="col-2 pe-2">
+              <div class="card border-0 shadow">
+                <div class="card-body">
+                  <div
+                    id="weather-container"
+                    class="d-flex flex-column gap-2 justify-content-center align-items-center"
+                  >
+                    <span class="card-title">Bandung, Indonesia</span>
+                    <div>
+                      <img
+                        alt="ypt logo"
+                        src="./img/icons-1.png"
+                        class="img-fluid"
+                        width="92"
+                        style="object-fit: cover; object-position: top"
+                      />
+                    </div>
+                    <span class="fw-semibold fs-3"
+                      ><span id="temperature"></span><sup>°C</sup></span
+                    >
+                    <small id="weather-description"></small>
+                    <span id="error-message" style="color: red"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-5 pe-2">
+              <div class="card h-100 border-0 shadow">
+                <div
+                  class="card-body text-center d-flex flex-column align-items-center justify-content-center"
+                >
+                  <div
+                    id="clock"
+                    class="fw-semibold"
+                    style="font-size: 68px"
+                  ></div>
+                  <small id="date" class="fw-semibold"></small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-5">
+              <div class="card h-100 border-0 shadow">
+                <div
+                  class="card-body text-center d-flex flex-column justify-content-center"
+                >
+                  <!-- Konten teks -->
+                  <div class="col-8 text-center">
+                    <h5 class="card-title fw-semibold">Direktur Utama</h5>
+                    <p
+                      class="card-text text-secondary"
+                      style="font-size: smaller"
+                    >
+                      Mari kita syukuri Pencapaian YPT di Tahun 2023 ini, dan
+                      Mari kita sambut 2024 dengan penuh semangat untuk
+                      menjalankan program utama IDEAS dan mencapai target RKA.
+                    </p>
+                    <span class="fw-semibold text-secondary"
+                      >~ Dodi Irawan</span
+                    >
+                  </div>
+
+                  <!-- Foto orang (di atas konten teks) -->
+                  <div class="position-absolute bottom-0" style="right: 0">
+                    <img
+                      alt="ypt-person"
+                      src="./img/person.png"
+                      class="img-fluid"
+                      width="200"
+                      style="object-fit: cover; object-position: top"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider border-0 shadow rounded">
+            <div class="slide-container">
+              <!-- Slide 1 -->
+              <div class="slide">
+                <div class="card bg-transparent border-0">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://cdn2.ypt.or.id/portal/23920007/media_1706244183.png"
+                        alt="ypt-image"
+                        class="rounded"
+                        width="550"
+                      />
+                      <div class="d-flex flex-column px-5 py-3">
+                        <p class="fw-bold text-center" style="font-size: 22px">
+                          Telkom University Perkenalkan Kampus Surabaya,
+                          Hadirkan Pendidikan Berkualitas dan Merata di
+                          Indonesia Dalam Menghasilkan Digital Talent Masa Depan
+                        </p>
+                        <small style="text-align: justify">
+                          Telkom University (Tel-U) resmi menggelar Open House
+                          yang berlangsung di kampus Surabaya pada Senin (22/1).
+                          Open House ini merupakan implementasi dari program
+                          Telkom University National Campus (TUNC) di bawah
+                          naungan oleh Yayasan Pendidikan Telkom (YPT) yang
+                          bertujuan untuk memberikan pendidikan berkualitas yang
+                          merata di Indonesia dan menghasilkan Digital Talent di
+                          masa depan. Kampus Telkom University Surabaya (TUS)
+                          merupakan kampus kedua yang bergabung dengan Tel-U
+                          setelah menghadirkan kampus Telkom University Jakarta
+                          (TUJ) pada Februari 2023.
+                        </small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="slide">
+                <div class="card bg-transparent border-0">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://cdn2.ypt.or.id/portal/23920007/media_1704878754.png"
+                        alt="ypt-image"
+                        class="rounded"
+                        width="550"
+                      />
+                      <div class="d-flex flex-column px-5 py-3">
+                        <p class="fw-bold text-center" style="font-size: 22px">
+                          Peletakan Batu Pertama Pembangunan Kawasan Pendidikan
+                          Telkom Padang
+                        </p>
+                        <small style="text-align: justify">
+                          Chief of Human Capital Officer Telkom Group, Bapak
+                          Afriwandi resmi meletakkan batu pertama pembangunan
+                          kawasan pendidikan telkom padang (Jumat, 24/11/2023)
+                          Peletakkan batu pertama ini didampingi langsung oleh
+                          bapak Dodi Irawan selaku Direktur Utama Yayasan
+                          Pendidikan Telkom, bapak Arif Rudiana selaku Direktur
+                          PSE, bapak Didi Haryadi selaku VP HCTPA, dan bapak
+                          Saparman Nur selaku Kepala SMP Telkom Padang. Acara
+                          peletakan batu pertama ini mencerminkan tekad kuat
+                          untuk mewujudkan visi pembangunan kawasan Telkom
+                          Padang sebagai pusat inovasi dan teknologi. Semua mata
+                          kini tertuju pada perjalanan pembangunan yang menarik
+                          ini, yang diharapkan akan membawa manfaat besar bagi
+                          masyarakat dan industri Pendidikan di Indonesia
+                        </small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="slide">
+                <div class="card bg-transparent border-0">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://cdn2.ypt.or.id/portal/23920007/media_1704694637.png"
+                        alt="ypt-image"
+                        class="rounded"
+                        width="550"
+                      />
+                      <div class="d-flex flex-column px-5 py-3">
+                        <p class="fw-bold text-center" style="font-size: 22px">
+                          YPT Serahkan Endownment Fund 8 Milyar Serta Resmikan
+                          Tiga Fasilitas Baru di Tel-U
+                        </p>
+                        <small style="text-align: justify">
+                          Telkom University (Tel-U) meresmikan tiga fasilitas
+                          baru di lingkungan kampus, yaitu Lapangan Basket 3 on
+                          3, Gedung Baru Admisi Tel-U, dan Ruang Rapat Pimpinan
+                          Tel-U di Gedung Bangkit Lantai 5. Peresmian ini
+                          dilaksanakan dengan meriah di Auditorium Gd. Damar
+                          pada Rabu (20/12). Direktur Utama Yayasan Pendidikan
+                          Telkom (YPT), Dodi Irawan S.T., bertindak sebagai
+                          pemimpin upacara peresmian. Dalam sambutannya, Dodi
+                          Irawan menyampaikan rasa syukur atas pencapaian Tel-U
+                          dalam mencetak inovasi yang luar biasa. “Banyak hal
+                          yang membuat kita berhasil mencetak inovasi, dan kita
+                          syukuri. Ini menjadi pijakan untuk menyongsong tahun
+                          2024 dan membuka jalan lebih baik lagi,” ujar Dodi.
+                        </small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 4 -->
+              <div class="slide">
+                <div class="card bg-transparent border-0">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://cdn2.ypt.or.id/portal/23920007/media_1704694432.png"
+                        alt="ypt-image"
+                        class="rounded"
+                        width="550"
+                      />
+                      <div class="d-flex flex-column px-5 py-3">
+                        <p class="fw-bold text-center" style="font-size: 22px">
+                          Telkom University Hadir di Kota Pahlawan, Surabaya
+                        </p>
+                        <small style="text-align: justify">
+                          Berdasarkan Surat Keputusan (SK) Menteri Pendidikan,
+                          Kebudayaan, Riset, dan Teknologi Republik Indonesia
+                          (Mendikbudristek RI) nomor 931/E/O/2023, tentang
+                          penyatuan Telkom University (Tel-U) dengan Institut
+                          Teknologi Telkom Surabaya (ITTS), secara resmi Tel-U
+                          bergabung dengan ITTS, dan menjadi Telkom University
+                          Kampus Surabaya (TUKS). Kampus yang berada di Jl.
+                          Ketintang No.156, Gayungan, Surabaya, Jawa Timur,
+                          memiliki 11 program studi antara lain S1 Teknik
+                          Telekomunikasi, S1 Teknik Elektro, S1 Teknik Komputer,
+                          dari Fakultas Teknik Elektro, S1. Sistem Informasi, S1
+                          Teknik Industri, S1 Teknik Logistik, dari Fakultas
+                          Rekayasa Industri, S1 Informatika, S1 Rekayasa
+                          Perangkat Lunak, S1 Data Sains, S1 Bisnis Digital dan
+                          S1 Teknologi Informasi dari Fakultas Informatika. Mutu
+                          pendidikan yang dihadirkan di kampus Surabaya akan
+                          sama dengan kualitas pendidikan yang ada di Telkom
+                          University kampus utama (Bandung), dengan memberikan
+                          fasilitas penunjang pembelajaran yang terbaik untuk
+                          mahasiswa, sehingga mampu menjadi agen perubahan bagi
+                          bangsa Indonesia.
+                        </small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 5 -->
+              <div class="slide">
+                <div class="card bg-transparent border-0">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://cdn2.ypt.or.id/portal/23920007/media_1704692097.png"
+                        alt="ypt-image"
+                        class="rounded"
+                        width="550"
+                      />
+                      <div class="d-flex flex-column px-5 py-3">
+                        <p class="fw-bold text-center" style="font-size: 22px">
+                          Telkom University Kembali Kukuhkan 3 Guru Besar
+                          Multidisiplin Ilmu
+                        </p>
+                        <small style="text-align: justify">
+                          Telkom University (Tel-U) menyelenggarakan Sidang
+                          Terbuka Senat dalam rangka pengukuhan tiga guru besar
+                          baru dalam berbagai disiplin ilmu. Rangkaian prosesi
+                          sidang yang dilaksanakan pada Selasa (19/12) di
+                          Auditorium Gedung Damar ini merupakan momen berharga
+                          dalam pengembangan ilmu pengetahuan di Indonesia.
+                          Melalui kesempatan ini, tiga profesor dinyatakan
+                          memenuhi syarat untuk menerima gelar tertinggi dalam
+                          karir akademis mereka. Pengukuhan ini merupakan bentuk
+                          penghargaan dan pengakuan atas kontribusi serta
+                          komitmen yang telah ditunjukkan oleh ketiga guru besar
+                          pada pengembangan ilmu pengetahuan. Para guru besar
+                          tersebut adalah Prof. Dra. Indrawati, M.M., Ph.D.
+                          dengan keahlian dalam bidang Ilmu Digital Marketing
+                          Management, Prof. Dr. Achmad Rizal, S.T., M.T. dengan
+                          keahlian dalam bidang Ilmu Instrumentasi Biomedis, dan
+                          Prof. Dr. Indrarini Dyah Irawati, S.T., M.T. dengan
+                          keahlian Bidang Ilmu Jaringan dan Multimedia.
+                        </small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

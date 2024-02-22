@@ -1,0 +1,28 @@
+body {
+  font-family: Poppins, "sans-serif";
+  /* background-color: #fafafa; */
+  background-image: url("./img/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slide-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  background-color: transparent;
+}
+
+.slide {
+  flex: 0 0 100%;
+}
+
+.card {
+  width: 100%;
+}
